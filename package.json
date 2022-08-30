@@ -1,0 +1,15 @@
+{
+  "name": "twitch-guilded-clips-webhook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wissididom",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "guilded.js": "^0.13.12"
+  }
+}
