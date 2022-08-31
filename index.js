@@ -62,8 +62,8 @@ fetch(`https://id.twitch.tv/oauth2/token?client_id=${process.env.TWITCH_CLIENT_I
 					.setURL(res.data[i].url)
 					.setAuthor(res.data[i].name, profileImageUrl, `https://www.twitch.tv/${res.data[i].creator_name.trim().toLowerCase()}`)
 					.setImage(res.data[i].thumbnail_url)
-					.addField(`[Streamer](${res.data[i].broadcaster_name.toLowerCase()})`, `[${res.data[i].broadcaster_name}](https://www.twitch.tv/${res.data[i].broadcaster_name.toLowerCase()})`, true)
-					.addField(`[Clipper](${res.data[i].creator_name.toLowerCase()})`, `[${res.data[i].creator_name}](https://www.twitch.tv/${res.data[i].creator_name.toLowerCase()})`, true)
+					.addField(`[Streamer](https://www.twitch.tv/${res.data[i].broadcaster_name.toLowerCase()})`, `[${res.data[i].broadcaster_name}](https://www.twitch.tv/${res.data[i].broadcaster_name.toLowerCase()})`, true)
+					.addField(`[Clipper](https://www.twitch.tv/${res.data[i].creator_name.toLowerCase()})`, `[${res.data[i].creator_name}](https://www.twitch.tv/${res.data[i].creator_name.toLowerCase()})`, true)
 					.addField(`[Views](${res.data[i].url})`, `[${res.data[i].view_count}](${res.data[i].url})`, true)
 					.addField(`[Duration](${res.data[i].url})`, `[${res.data[i].duration} Seconds](${res.data[i].url})`, true)
 				]).catch(err => console.error(err));
