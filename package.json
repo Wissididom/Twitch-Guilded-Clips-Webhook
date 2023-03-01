@@ -10,6 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.1",
-    "guilded.js": "^0.17.0"
+    "guilded.js": "^0.18.0"
   }
 }
